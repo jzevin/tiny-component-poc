@@ -6,4 +6,4 @@ Also did not look at anything else and the code is 100% mine except the CSS regu
 
 ### Check out the [demo](https://phillydesignr.github.io/tiny-component-poc/)
 
-> **Note:** of course it there are lots of inefficiencies... it's just a poc done in a couple hours.
+> **Note:** of course there are inefficiencies and things that could be improved... it's just a poc done in a couple hours.
