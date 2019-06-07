@@ -1,0 +1,16 @@
+node_modules
+build
+dist
+.DS_Store
+*.log
+.rpt2_cache
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+.vscode
+.idea
+.rts2*
+.cache
+sizes.csv
+package-lock.json
+yarn.lock
