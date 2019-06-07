@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
     const core = (function () {
         function buildRegxFromScopeProps(rep) {
@@ -89,14 +91,14 @@
     const zc1 = new ZevComponent({
         selector: 'data-test-one',
         template: `
-            <h1>JS {{ title   }}</h1>
+            <h1>ZevComponent -  {{ title   }}</h1>
             <div>{{ content }}</div>
             <button>{{ btnName }}</button>
         `,
         style: `h1 { color: dodgerblue; } [data-test-one] { margin: 1em; padding: 1em; background: #333; color: white; }`,
         controller: (scope, el) => {
             let count = 0;
-            scope.data.title = 'Rocks!'
+            scope.data.title = 'One!';
             scope.data.content = 'press it man...';
             scope.data.btnName = 'Do it!';
             el.querySelector('button').addEventListener('click', e => {
@@ -110,7 +112,7 @@
     const zc2 = new ZevComponent({
         selector: 'data-test-two',
         template: `
-            <h1>JS {{ title   }}</h1>
+            <h1>ZevComponent -  {{ title   }}</h1>
             <div>{{ content }}</div>
             <button >{{ btnName }}</button>
             <hr />
@@ -120,10 +122,10 @@
         controller: (scope, el) => {
             let count = 0;
             let tmr = 0;
-            scope.data.title = 'What?'
+            scope.data.title = 'Two!';
             scope.data.content = 'press it man...';
             scope.data.btnName = 'Do it!';
-            scope.data.more  = 0;
+            scope.data.more = 0;
             el.querySelector('button').addEventListener('click', e => {
                 console.log(Math.random());
                 scope.data.content = 1000000000 + Math.floor(Math.random() * 1000000000);
